@@ -1,0 +1,1125 @@
+{% extends 'base.html' %}
+{% block title %}Special Offers | 1313FOG - Fashion of Generation{% endblock %}
+
+{% block content %}
+<!-- Offers Hero Section with Enhanced Visual Design -->
+<section class="hero offers-hero" style="background-image: url('https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGlzY291bnR8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+        <div class="hero-content animate-on-scroll fade-up">
+            <div class="offers-badge">Limited Time</div>
+            <h1 class="hero-title">Exclusive Offers & Savings</h1>
+            <p class="hero-subtitle">Don't miss our 2025 promotions and special deals on premium fashion</p>
+            <div class="hero-btns">
+                <a href="#current-offers" class="btn btn-primary btn-lg">View Offers</a>
+                <a href="{{ url_for('services') }}" class="btn btn-outline btn-lg">Find a Store</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <div class="hero-stat-number">50%</div>
+                    <div class="hero-stat-text">Discount</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-number">100+</div>
+                    <div class="hero-stat-text">Products</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-number">7</div>
+                    <div class="hero-stat-text">Days Only</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-accent-shape"></div>
+</section>
+
+<!-- Current Offers -->
+<section id="current-offers" class="section pt-12 pb-12">
+    <div class="container">
+        <div class="section-title center animate-on-scroll fade-up">
+            <span class="section-subtitle">Limited Edition</span>
+            <h2>Current Promotions</h2>
+            <p class="subtitle">Exclusive 2025 offers to elevate your fashion game</p>
+        </div>
+        
+        <!-- Flat 50% Off Promotion - Enhanced with modern card design -->
+        <div class="offer-card large featured-offer animate-on-scroll fade-up">
+            <div class="offer-content">
+                <div class="offer-badge pulse">Limited Time</div>
+                <h2 class="offer-title">FLAT 50% OFF</h2>
+                <div class="offer-timer">
+                    <div class="timer-label">Offer expires in:</div>
+                    <div class="countdown-timer" data-days="7">
+                        <div class="timer-item">
+                            <span class="timer-number" id="timer-days">07</span>
+                            <span class="timer-text">Days</span>
+                        </div>
+                        <div class="timer-separator">:</div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="timer-hours">24</span>
+                            <span class="timer-text">Hours</span>
+                        </div>
+                        <div class="timer-separator">:</div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="timer-minutes">00</span>
+                            <span class="timer-text">Minutes</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="offer-description">Enjoy an unbeatable FLAT 50% discount on all premium fashion items across our entire store. Refresh your 2025 wardrobe with our exclusive selections at half the price!</p>
+                <p class="offer-details">Valid on all regular-priced items in-store. Cannot be combined with other offers.</p>
+                <div class="offer-cta">
+                    <a href="{{ url_for('services') }}" class="btn btn-primary">Visit a Store</a>
+                    <a href="https://wa.me/919858400013?text=Hi!%20I'm%20interested%20in%20the%20FLAT%2050%%20OFF%20offer!" class="btn btn-outline btn-icon">
+                        <i class="fab fa-whatsapp"></i> Inquire via WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="offer-image">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbiUyMHNob3BwaW5nfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Flat 50% Off">
+                <div class="offer-overlay">
+                    <div class="offer-highlight">50% OFF</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summer Collection -->
+        <div class="grid mt-10">
+            <div class="grid-col-6 animate-on-scroll">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <div class="offer-badge">New Arrivals</div>
+                        <h3 class="offer-title">Summer Collection</h3>
+                        <p class="offer-description">Step into style with our exclusive summer collection! Find the latest trends that keep you cool and fashionable all season long.</p>
+                        <div class="offer-cta">
+                            <a href="{{ url_for('services') }}" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3VtbWVyJTIwZmFzaGlvbnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Summer Collection">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Winter Collection -->
+            <div class="grid-col-6 animate-on-scroll">
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <div class="offer-badge">Special Discount</div>
+                        <h3 class="offer-title">Winter Collection Sale</h3>
+                        <p class="offer-description">Massive 50% discount on our entire range of winter apparel. From cozy sweaters to stylish jackets, find everything you need!</p>
+                        <div class="offer-cta">
+                            <a href="{{ url_for('services') }}" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1511664895932-6b848652b3ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbnRlciUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Winter Collection Sale">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Categories -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Categories</h2>
+            <p class="subtitle">Explore our top collections for the season</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Men's Fashion -->
+            <div class="grid-col-4 animate-on-scroll">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1lbiUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Men's Fashion">
+                    </div>
+                    <div class="category-content">
+                        <h3>Men's Fashion</h3>
+                        <p>Find the perfect style for every occasion with our premium men's collection.</p>
+                        <a href="{{ url_for('services') }}" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Women's Fashion -->
+            <div class="grid-col-4 animate-on-scroll">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdvbWVucyUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Women's Fashion">
+                    </div>
+                    <div class="category-content">
+                        <h3>Women's Fashion</h3>
+                        <p>Elevate your wardrobe with our stunning collection of women's fashion.</p>
+                        <a href="{{ url_for('services') }}" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kids' Fashion -->
+            <div class="grid-col-4 animate-on-scroll">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8a2lkcyUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Kids' Fashion">
+                    </div>
+                    <div class="category-content">
+                        <h3>Kids' Fashion</h3>
+                        <p>Stylish and comfortable clothing for your little ones that they'll love to wear.</p>
+                        <a href="{{ url_for('services') }}" class="btn btn-sm btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seasonal Highlights -->
+<section class="section pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Seasonal Highlights</h2>
+            <p class="subtitle">Top picks for the current season</p>
+        </div>
+        
+        <div class="seasonal-carousel animate-on-scroll">
+            <div class="seasonal-item">
+                <div class="seasonal-image">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFzaGlvbnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Casual Wear">
+                </div>
+                <div class="seasonal-content">
+                    <h4>Casual Wear</h4>
+                    <p>Comfortable and stylish options for everyday wear</p>
+                    <span class="seasonal-price">
+                        <span class="price-original">₹2,999</span>
+                        <span class="price-discounted">₹1,499</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="seasonal-item">
+                <div class="seasonal-image">
+                    <img src="https://images.unsplash.com/photo-1616627052149-22c4f8a6316e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Summer Dresses">
+                </div>
+                <div class="seasonal-content">
+                    <h4>Summer Dresses</h4>
+                    <p>Light and refreshing dresses for hot days</p>
+                    <span class="seasonal-price">
+                        <span class="price-original">₹3,499</span>
+                        <span class="price-discounted">₹1,749</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="seasonal-item">
+                <div class="seasonal-image">
+                    <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Premium Footwear">
+                </div>
+                <div class="seasonal-content">
+                    <h4>Premium Footwear</h4>
+                    <p>Stylish and comfortable footwear for all occasions</p>
+                    <span class="seasonal-price">
+                        <span class="price-original">₹4,999</span>
+                        <span class="price-discounted">₹2,499</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="seasonal-item">
+                <div class="seasonal-image">
+                    <img src="https://images.unsplash.com/photo-1591213954196-2d0ccb3f8d4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFzaGlvbiUyMGFjY2Vzc29yaWVzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Accessories">
+                </div>
+                <div class="seasonal-content">
+                    <h4>Accessories</h4>
+                    <p>Complete your look with our premium accessories</p>
+                    <span class="seasonal-price">
+                        <span class="price-original">₹1,999</span>
+                        <span class="price-discounted">₹999</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enhanced Newsletter with Modern Design -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-container">
+            <div class="newsletter-content animate-on-scroll fade-right">
+                <span class="section-subtitle light">Stay Connected</span>
+                <h2>Never Miss An Exclusive Offer</h2>
+                <p>Subscribe to our WhatsApp updates to get instant notifications about flash sales, limited collections, and member-only offers. Be the first to know when new styles drop!</p>
+                <div class="newsletter-stats">
+                    <div class="newsletter-stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Subscribers</span>
+                    </div>
+                    <div class="newsletter-stat">
+                        <span class="stat-number">Weekly</span>
+                        <span class="stat-label">Exclusive Offers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter-action animate-on-scroll fade-left">
+                <div class="newsletter-card">
+                    <div class="newsletter-form">
+                        <h3>Subscribe Now</h3>
+                        <p>Get instant access to exclusive deals</p>
+                        <a href="https://wa.me/919858400013?text=Hi!%20I'd%20like%20to%20receive%20updates%20about%20FOG%20offers!" class="btn btn-primary btn-lg btn-icon">
+                            <i class="fab fa-whatsapp"></i> Subscribe via WhatsApp
+                        </a>
+                        <p class="newsletter-disclaimer">We respect your privacy and will never spam you. You can unsubscribe at any time.</p>
+                    </div>
+                    <div class="newsletter-graphic">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-shape"></div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p class="subtitle">Common questions about our offers and policies</p>
+        </div>
+        
+        <div class="faq-container animate-on-scroll">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How long do your offers typically last?</h3>
+                    <span class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our promotional offers typically last for 2-4 weeks, but special seasonal sales may run longer. Limited-time offers are clearly marked with their expiration dates in our stores and promotional materials.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I combine multiple offers or discounts?</h3>
+                    <span class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </span>
+                </div>
+                <div class="faq-answer">
+                    <p>Unless specifically stated, our promotions cannot be combined with other offers or discounts. Each promotion applies independently, and we always ensure you get the best available discount for your purchase.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you have any membership or loyalty program?</h3>
+                    <span class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </span>
+                </div>
+                <div class="faq-answer">
+                    <p>We're working on launching a loyalty program soon! In the meantime, subscribe to our WhatsApp updates to receive exclusive offers and early access to sales.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I return items purchased during a sale?</h3>
+                    <span class="faq-icon">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, our standard exchange policy applies to items purchased during sales as well. Please refer to our <a href="{{ url_for('policies') }}">Exchange Policy</a> for complete details.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Enhanced Offers Hero Section */
+    .offers-hero {
+        position: relative;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 100%);
+        z-index: 1;
+    }
+    
+    .hero-accent-shape {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: var(--color-background);
+        clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        z-index: 2;
+    }
+    
+    .offers-hero .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 650px;
+    }
+    
+    .offers-badge {
+        display: inline-block;
+        background: var(--color-accent);
+        color: white;
+        padding: var(--spacing-2) var(--spacing-4);
+        border-radius: var(--radius-full);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: var(--spacing-4);
+        font-size: 0.85rem;
+    }
+    
+    .hero-stats {
+        display: flex;
+        gap: var(--spacing-6);
+        margin-top: var(--spacing-6);
+        flex-wrap: wrap;
+    }
+    
+    .hero-stat-item {
+        text-align: center;
+        min-width: 80px;
+    }
+    
+    .hero-stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--color-accent);
+        line-height: 1;
+        margin-bottom: var(--spacing-1);
+    }
+    
+    .hero-stat-text {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+    /* Enhanced Offer Cards */
+    .offer-card {
+        background-color: var(--color-card);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: var(--transition-all);
+    }
+    
+    .offer-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .offer-card.large {
+        flex-direction: column;
+    }
+    
+    .offer-card.featured-offer {
+        border: 1px solid rgba(45, 59, 224, 0.1);
+    }
+    
+    .offer-content {
+        padding: var(--spacing-8);
+        flex: 1;
+    }
+    
+    .offer-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+        color: white;
+        padding: var(--spacing-1) var(--spacing-4);
+        border-radius: var(--radius-full);
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: var(--spacing-4);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        box-shadow: 0 2px 10px rgba(255, 59, 48, 0.3);
+    }
+    
+    .offer-badge.pulse {
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(255, 59, 48, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+        }
+    }
+    
+    .offer-timer {
+        background-color: var(--color-surface);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-4);
+        margin: var(--spacing-4) 0;
+    }
+    
+    .timer-label {
+        font-size: 0.875rem;
+        margin-bottom: var(--spacing-2);
+        color: var(--color-text-secondary);
+    }
+    
+    .countdown-timer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .timer-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .timer-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-accent);
+    }
+    
+    .timer-text {
+        font-size: 0.75rem;
+        color: var(--color-text-tertiary);
+    }
+    
+    .timer-separator {
+        margin: 0 var(--spacing-2);
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-text-secondary);
+    }
+    
+    .offer-title {
+        margin-bottom: var(--spacing-4);
+        font-size: 2rem;
+        background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
+    
+    .offer-description {
+        margin-bottom: var(--spacing-4);
+        color: var(--color-text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+    
+    .offer-details {
+        font-size: 0.875rem;
+        color: var(--color-text-tertiary);
+        margin-bottom: var(--spacing-6);
+        padding-left: var(--spacing-4);
+        border-left: 2px solid var(--color-primary);
+    }
+    
+    .offer-cta {
+        display: flex;
+        gap: var(--spacing-4);
+        flex-wrap: wrap;
+    }
+    
+    .offer-image {
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .offer-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition-transform);
+    }
+    
+    .offer-card:hover .offer-image img {
+        transform: scale(1.05);
+    }
+    
+    .offer-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: var(--transition-all);
+    }
+    
+    .offer-card:hover .offer-overlay {
+        opacity: 1;
+    }
+    
+    .offer-highlight {
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        transform: rotate(-10deg);
+    }
+    
+    /* Category Cards */
+    .category-card {
+        height: 100%;
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        transition: var(--transition-all);
+        background-color: var(--color-card);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .category-image {
+        height: 220px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .category-image::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+        z-index: 1;
+    }
+    
+    .category-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease-in-out;
+    }
+    
+    .category-card:hover .category-image img {
+        transform: scale(1.1);
+    }
+    
+    .category-content {
+        padding: var(--spacing-6);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .category-content h3 {
+        margin-bottom: var(--spacing-3);
+        font-size: 1.3rem;
+    }
+    
+    .category-content p {
+        margin-bottom: var(--spacing-6);
+        flex: 1;
+        color: var(--color-text-secondary);
+    }
+    
+    /* Seasonal Items */
+    .seasonal-carousel {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--spacing-6);
+    }
+    
+    @media (min-width: 640px) {
+        .seasonal-carousel {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .seasonal-carousel {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .offer-card.large {
+            flex-direction: row;
+        }
+        
+        .offer-card.large .offer-content {
+            width: 60%;
+        }
+        
+        .offer-card.large .offer-image {
+            width: 40%;
+            height: auto;
+        }
+    }
+    
+    .seasonal-item {
+        background-color: var(--color-card);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+        transition: var(--transition-all);
+    }
+    
+    .seasonal-item:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .seasonal-image {
+        height: 260px;
+        overflow: hidden;
+    }
+    
+    .seasonal-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease-in-out;
+    }
+    
+    .seasonal-item:hover .seasonal-image img {
+        transform: scale(1.1);
+    }
+    
+    .seasonal-content {
+        padding: var(--spacing-5) var(--spacing-6);
+    }
+    
+    .seasonal-content h4 {
+        margin-bottom: var(--spacing-2);
+        font-size: 1.1rem;
+    }
+    
+    .seasonal-content p {
+        margin-bottom: var(--spacing-3);
+        color: var(--color-text-secondary);
+        font-size: 0.9rem;
+    }
+    
+    .seasonal-price {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-3);
+    }
+    
+    .price-original {
+        color: var(--color-text-tertiary);
+        text-decoration: line-through;
+        font-size: 0.9rem;
+    }
+    
+    .price-discounted {
+        color: var(--color-accent);
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    /* Enhanced Newsletter Section */
+    .newsletter-section {
+        background: var(--gradient-primary);
+        padding: var(--spacing-16) 0;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .newsletter-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transform: translate(50%, -50%);
+    }
+    
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-6);
+        position: relative;
+        z-index: 1;
+    }
+    
+    .newsletter-content {
+        max-width: 600px;
+    }
+    
+    .section-subtitle {
+        display: inline-block;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-primary);
+        font-weight: 600;
+        margin-bottom: var(--spacing-2);
+        background-color: rgba(45, 59, 224, 0.1);
+        padding: var(--spacing-1) var(--spacing-3);
+        border-radius: var(--radius-full);
+    }
+    
+    .section-subtitle.light {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .newsletter-content h2 {
+        margin-bottom: var(--spacing-4);
+        font-size: 2.2rem;
+    }
+    
+    .newsletter-content p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .newsletter-stats {
+        display: flex;
+        gap: var(--spacing-6);
+    }
+    
+    .newsletter-stat {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: var(--spacing-1);
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .newsletter-card {
+        background-color: white;
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+        position: relative;
+    }
+    
+    .newsletter-form {
+        padding: var(--spacing-6);
+    }
+    
+    .newsletter-form h3 {
+        color: var(--color-text-primary);
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .newsletter-form p {
+        color: var(--color-text-secondary);
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .newsletter-disclaimer {
+        font-size: 0.75rem;
+        color: var(--color-text-tertiary);
+        margin-top: var(--spacing-4);
+    }
+    
+    .newsletter-graphic {
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        font-size: 8rem;
+        opacity: 0.1;
+        color: var(--color-primary);
+    }
+    
+    /* FAQ Section */
+    .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: var(--spacing-4);
+        border-radius: var(--radius-lg);
+        background-color: var(--color-card);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition-all);
+    }
+    
+    .faq-item:hover {
+        box-shadow: var(--shadow-md);
+    }
+    
+    .faq-question {
+        padding: var(--spacing-5) var(--spacing-6);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .faq-question h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .faq-icon {
+        color: var(--color-primary);
+        font-size: 1rem;
+    }
+    
+    .faq-icon .fa-minus {
+        display: none;
+    }
+    
+    .faq-item.active .faq-icon .fa-plus {
+        display: none;
+    }
+    
+    .faq-item.active .faq-icon .fa-minus {
+        display: block;
+    }
+    
+    .faq-answer {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+    }
+    
+    .faq-item.active .faq-answer {
+        padding: 0 var(--spacing-6) var(--spacing-6);
+        max-height: 300px;
+    }
+    
+    /* Animation Classes */
+    .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-up.animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .fade-right {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-right.animated {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .fade-left {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-left.animated {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    /* Utilities */
+    .center {
+        text-align: center;
+    }
+    
+    .mt-10 {
+        margin-top: var(--spacing-10);
+    }
+    
+    @media (min-width: 768px) {
+        .newsletter-container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .newsletter-content {
+            max-width: 55%;
+        }
+        
+        .newsletter-action {
+            min-width: 350px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Enhanced animation on scroll
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('fade-up')) {
+                        entry.target.classList.add('animated');
+                    } else if (entry.target.classList.contains('fade-right')) {
+                        entry.target.classList.add('animated');
+                    } else if (entry.target.classList.contains('fade-left')) {
+                        entry.target.classList.add('animated');
+                    } else {
+                        entry.target.classList.add('animated');
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Countdown Timer
+        const countdownTimer = document.querySelector('.countdown-timer');
+        if (countdownTimer) {
+            // Set the countdown date based on data attribute
+            const daysToAdd = parseInt(countdownTimer.getAttribute('data-days') || 7);
+            const countDownDate = new Date();
+            countDownDate.setDate(countDownDate.getDate() + daysToAdd);
+            countDownDate.setHours(23, 59, 59, 0);
+            
+            // Update the count down every 1 second
+            const timerDays = document.getElementById("timer-days");
+            const timerHours = document.getElementById("timer-hours");
+            const timerMinutes = document.getElementById("timer-minutes");
+            
+            function updateTimer() {
+                // Get today's date and time
+                const now = new Date().getTime();
+                
+                // Find the distance between now and the count down date
+                const distance = countDownDate.getTime() - now;
+                
+                // Time calculations for days, hours, minutes
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                
+                // Add leading zeros if needed
+                const formatNumber = (num) => (num < 10 ? `0${num}` : num);
+                
+                // Display the result
+                if (timerDays) timerDays.textContent = formatNumber(days);
+                if (timerHours) timerHours.textContent = formatNumber(hours);
+                if (timerMinutes) timerMinutes.textContent = formatNumber(minutes);
+                
+                // If the count down is finished, display expired message
+                if (distance < 0) {
+                    clearInterval(x);
+                    if (timerDays) timerDays.textContent = "00";
+                    if (timerHours) timerHours.textContent = "00";
+                    if (timerMinutes) timerMinutes.textContent = "00";
+                    
+                    // Add expired message
+                    const timerParent = countdownTimer.parentNode;
+                    if (timerParent) {
+                        const expiredMessage = document.createElement('div');
+                        expiredMessage.className = 'expired-message';
+                        expiredMessage.textContent = 'This offer has expired!';
+                        timerParent.appendChild(expiredMessage);
+                    }
+                }
+            }
+            
+            // Run the function immediately and then every second
+            updateTimer();
+            const x = setInterval(updateTimer, 1000);
+        }
+        
+        // FAQ Accordion with enhanced effects
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items with smooth animation
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Initialize first FAQ item as open
+        if (faqItems.length) {
+            faqItems[0].classList.add('active');
+        }
+        
+        // Parallax effect on hero section
+        const heroSection = document.querySelector('.offers-hero');
+        if (heroSection) {
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.pageYOffset;
+                heroSection.style.backgroundPosition = `50% ${scrollPosition * 0.05}px`;
+            });
+        }
+    });
+</script>
+{% endblock %}

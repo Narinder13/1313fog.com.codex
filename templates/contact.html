@@ -1,13 +1,778 @@
 {% extends 'base.html' %}
-{% block title %}Policies | 1313FOG{% endblock %}
+{% block title %}Contact Us | 1313FOG - Fashion of Generation{% endblock %}
+
 {% block content %}
-<section class="policies">
-    <h1>Our Policies</h1>
-    <h2>No Guarantee Warranty</h2>
-    <p>All products are provided "as is" without warranties. Please check size guides before purchase.</p>
-    <h2>No Refund Policy</h2>
-    <p>All sales are final. Exchanges may be offered within 7 days subject to item condition.</p>
-    <h2>Exchange Process</h2>
-    <p>Contact us at <a href="mailto:1313fog@gmail.com">1313fog@gmail.com</a> or call +91 98584 00013 to start an exchange.</p>
+<!-- Contact Hero Section -->
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZhc2hpb24lMjBzdG9yZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+        <div class="hero-content animate-on-scroll">
+            <h1 class="hero-title">Get In Touch</h1>
+            <p class="hero-subtitle">We're here to help and answer any question you might have</p>
+        </div>
+    </div>
 </section>
+
+<!-- Contact Options -->
+<section class="section pt-12 pb-6">
+    <div class="container">
+        <div class="contact-options">
+            <div class="contact-option-card animate-on-scroll">
+                <div class="contact-option-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Customer Support</h3>
+                <p>Need help with your order or have questions about our products?</p>
+                <a href="tel:+919858400013" class="btn btn-sm btn-primary">Call Us</a>
+            </div>
+            
+            <div class="contact-option-card animate-on-scroll">
+                <div class="contact-option-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>Visit a Store</h3>
+                <p>Find your nearest 1313FOG store and visit us in person</p>
+                <a href="{{ url_for('services') }}" class="btn btn-sm btn-primary">Find Stores</a>
+            </div>
+            
+            <div class="contact-option-card animate-on-scroll">
+                <div class="contact-option-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp Support</h3>
+                <p>Get quick assistance through our WhatsApp support</p>
+                <a href="https://wa.me/919858400013" class="btn btn-sm btn-primary">Message Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form & Info -->
+<section class="section pt-6 pb-12">
+    <div class="container">
+        <div class="contact-layout">
+            <!-- Contact Form -->
+            <div class="contact-form-container animate-on-scroll">
+                <h2 class="section-title">Send us a message</h2>
+                <p class="mb-6">Fill out the form below and our team will get back to you shortly</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="product">Product Information</option>
+                            <option value="exchange">Exchange Request</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you"></textarea>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to the <a href="{{ url_for('policies') }}">privacy policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="contact-info animate-on-scroll">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p>Reach out to us through any of these channels:</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Head Office Address</h4>
+                                <address>
+                                    1313 FOG<br>
+                                    #272, Near Gurudwara, Chak Fateh Singh Wala<br>
+                                    Bathinda 151101 (Pb)
+                                </address>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone Numbers</h4>
+                                <p>
+                                    <a href="tel:+919858400013">+91 98584 00013</a><br>
+                                    <a href="tel:+919888369103">+91 98883 69103</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:1313fog@gmail.com">1313fog@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Saturday: 9:30 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links mt-6">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/1313fog" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/1313fog/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/919858400013" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container mt-6">
+                    <h4>Find Us</h4>
+                    <!-- Replace with an actual map embed code for the real store location -->
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.1794656086347!2d74.9319659!3d30.3094292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391732a8c4398df3%3A0x5d3ff63e9fac22b9!2sChak%20Fateh%20Singh%20Wala%2C%20Punjab!5e0!3m2!1sen!2sin!4v1686125468593!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section pt-12 pb-12 bg-surface">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Frequently Asked Questions</h2>
+            <p class="subtitle">Quick answers to common inquiries</p>
+        </div>
+        
+        <div class="faq-container animate-on-scroll">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your store hours?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Our stores are open Monday through Saturday from 9:30 AM to 9:00 PM. Hours may vary on holidays, so please check with your local store for specific holiday hours.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer exchanges?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer exchanges within 7 days of purchase. Items must be unused, in original packaging, and accompanied by the receipt. Please see our <a href="{{ url_for('policies') }}">Exchange Policy</a> for more information.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer cash refunds?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, we have a strict no-refund policy. All sales are final, but we do offer exchanges within our exchange policy guidelines. For more details, please refer to our <a href="{{ url_for('policies') }}">Refund Policy</a>.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I track my order?</h3>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>For order tracking inquiries, please contact our customer service team at <a href="tel:+919858400013">+91 98584 00013</a> or via email at <a href="mailto:1313fog@gmail.com">1313fog@gmail.com</a> with your order number.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section pt-12 pb-12">
+    <div class="container">
+        <div class="cta-container animate-on-scroll">
+            <div class="cta-content">
+                <h2>Join Our Community</h2>
+                <p>Stay updated with the latest fashion trends, new arrivals, and exclusive offers</p>
+                <form class="newsletter-form">
+                    <div class="newsletter-form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-dark">Subscribe</button>
+                    </div>
+                    <p class="form-disclaimer">By subscribing, you agree to our <a href="{{ url_for('policies') }}">privacy policy</a></p>
+                </form>
+                <div class="social-proof">
+                    <p>Join our <strong>50,000+</strong> fashion enthusiasts on social media</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/1313fog" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/1313fog/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919858400013" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-image">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZhc2hpb24lMjBzdG9yZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Fashion store interior">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Contact Hero Styling */
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+        z-index: 1;
+    }
+    
+    /* Contact Options Section */
+    .contact-options {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--spacing-6);
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    @media (min-width: 640px) {
+        .contact-options {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .contact-options {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .contact-option-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: var(--spacing-6);
+        background-color: var(--color-card);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        transition: var(--transition-all);
+    }
+    
+    .contact-option-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .contact-option-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: var(--radius-full);
+        background: linear-gradient(45deg, var(--color-primary), var(--color-primary-dark));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: var(--spacing-4);
+        color: white;
+        font-size: 2rem;
+        transition: var(--transition-all);
+    }
+    
+    .contact-option-card:hover .contact-option-icon {
+        transform: scale(1.1) rotate(10deg);
+    }
+    
+    .contact-option-card h3 {
+        margin-bottom: var(--spacing-3);
+        color: var(--color-heading);
+        font-size: 1.25rem;
+    }
+    
+    .contact-option-card p {
+        margin-bottom: var(--spacing-5);
+        color: var(--color-text);
+    }
+    
+    /* Contact Layout */
+    .contact-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    @media (min-width: 1024px) {
+        .contact-layout {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    /* Contact Form */
+    .contact-form-container {
+        padding: var(--spacing-8);
+        background-color: var(--color-card);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-5);
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+    
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+    
+    @media (min-width: 768px) {
+        .form-row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    .form-group label {
+        font-weight: 500;
+        color: var(--color-text-primary);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: var(--spacing-3) var(--spacing-4);
+        border: 2px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background-color: var(--color-background);
+        color: var(--color-text);
+        font-size: 1rem;
+        transition: var(--transition-all);
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: var(--color-primary);
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(45, 59, 224, 0.15);
+    }
+    
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-3);
+        margin-top: var(--spacing-3);
+    }
+    
+    .form-check input {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .form-check label {
+        font-size: 0.9rem;
+    }
+    
+    .btn-full {
+        width: 100%;
+    }
+    
+    /* Contact Info Card */
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+    
+    .contact-info-card {
+        padding: var(--spacing-8);
+        background-color: var(--color-card);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow-md);
+        height: 100%;
+    }
+    
+    .contact-info-card h3 {
+        margin-bottom: var(--spacing-6);
+        color: var(--color-heading);
+        position: relative;
+        display: inline-block;
+    }
+    
+    .contact-info-card h3::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background-color: var(--color-primary);
+        border-radius: var(--radius-full);
+    }
+    
+    .contact-details {
+        margin-top: var(--spacing-6);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-6);
+    }
+    
+    .contact-detail-item {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--spacing-4);
+    }
+    
+    .contact-detail-item i {
+        font-size: 1.5rem;
+        color: var(--color-primary);
+        margin-top: var(--spacing-1);
+    }
+    
+    .contact-detail-item h4 {
+        margin-bottom: var(--spacing-2);
+        font-family: var(--font-body);
+        color: var(--color-text-primary);
+        font-weight: 600;
+    }
+    
+    .contact-detail-item address {
+        font-style: normal;
+        line-height: 1.6;
+    }
+    
+    .contact-detail-item a {
+        color: var(--color-text);
+        transition: var(--transition-all);
+        text-decoration: none;
+    }
+    
+    .contact-detail-item a:hover {
+        color: var(--color-primary);
+    }
+    
+    .social-links {
+        margin-top: var(--spacing-6);
+    }
+    
+    .social-links h4 {
+        margin-bottom: var(--spacing-4);
+        font-family: var(--font-body);
+        font-weight: 600;
+    }
+    
+    .social-icons {
+        display: flex;
+        gap: var(--spacing-4);
+    }
+    
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: var(--radius-full);
+        background-color: var(--color-surface);
+        color: var(--color-text-primary);
+        transition: var(--transition-all);
+    }
+    
+    .social-icon:hover {
+        background-color: var(--color-primary);
+        color: white;
+        transform: translateY(-3px);
+    }
+    
+    .map-container {
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+    }
+    
+    .map-container h4 {
+        margin-bottom: var(--spacing-4);
+        font-family: var(--font-body);
+        font-weight: 600;
+    }
+    
+    .google-map {
+        height: 300px;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+    }
+    
+    /* FAQ Section */
+    .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        margin-bottom: var(--spacing-4);
+        border-radius: var(--radius-lg);
+        background-color: var(--color-card);
+        overflow: hidden;
+    }
+    
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--spacing-5) var(--spacing-6);
+        cursor: pointer;
+        background-color: var(--color-card);
+    }
+    
+    .faq-question h3 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: var(--color-text-primary);
+        font-weight: 500;
+    }
+    
+    .faq-question i {
+        color: var(--color-primary);
+        transition: var(--transition-all);
+    }
+    
+    .faq-answer {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: var(--transition-all);
+    }
+    
+    .faq-answer p {
+        padding: 0 var(--spacing-6) var(--spacing-5);
+    }
+    
+    .faq-item.active .faq-question {
+        border-bottom: 1px solid var(--color-border);
+    }
+    
+    .faq-item.active .faq-question i {
+        transform: rotate(45deg);
+    }
+    
+    .faq-item.active .faq-answer {
+        max-height: 300px;
+    }
+    
+    /* CTA Section */
+    .cta-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+        background-color: var(--color-card);
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+    }
+    
+    @media (min-width: 1024px) {
+        .cta-container {
+            grid-template-columns: 1fr 400px;
+        }
+    }
+    
+    .cta-content {
+        padding: var(--spacing-8);
+    }
+    
+    .cta-content h2 {
+        margin-bottom: var(--spacing-4);
+        color: var(--color-heading);
+    }
+    
+    .newsletter-form {
+        margin-top: var(--spacing-6);
+    }
+    
+    .newsletter-form-group {
+        display: flex;
+        max-width: 500px;
+        margin-bottom: var(--spacing-3);
+    }
+    
+    .newsletter-form-group input {
+        flex: 1;
+        padding: var(--spacing-3) var(--spacing-4);
+        border: 2px solid var(--color-border);
+        border-right: none;
+        border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+        background-color: var(--color-background);
+        color: var(--color-text);
+    }
+    
+    .newsletter-form-group button {
+        border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+    }
+    
+    .form-disclaimer {
+        font-size: 0.8rem;
+        color: var(--color-text-secondary);
+    }
+    
+    .social-proof {
+        margin-top: var(--spacing-8);
+    }
+    
+    .cta-image {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .cta-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .mt-6 {
+        margin-top: var(--spacing-6);
+    }
+    
+    .mb-6 {
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .center {
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Form validation
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form fields
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                const privacy = document.getElementById('privacy').checked;
+                
+                // Simple validation
+                if (!name || !email || !subject || !message || !privacy) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                
+                // Form submission success message (in a real app, this would send data to a server)
+                alert('Thank you for your message! Our team will get back to you shortly.');
+                contactForm.reset();
+            });
+        }
+        
+        // FAQ accordion functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Newsletter form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                
+                if (!email) {
+                    alert('Please enter your email address.');
+                    return;
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                
+                // Success message
+                alert('Thank you for subscribing to our newsletter!');
+                this.reset();
+            });
+        }
+    });
+</script>
 {% endblock %}

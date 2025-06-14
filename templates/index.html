@@ -1,23 +1,374 @@
 {% extends 'base.html' %}
-{% block title %}Home | 1313FOG{% endblock %}
+{% block title %}Home | 1313FOG - Fashion of Generation{% endblock %}
+
 {% block content %}
-<section class="hero">
-    <h1>Welcome to FOG – Your Go-To Destination for Fashion</h1>
-    <p>Step into style with our exclusive summer collection! Enjoy a FLAT 50% OFF on all items.</p>
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1589465885857-44edb59bbff2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+        <div class="hero-content animate-on-scroll">
+            <h1 class="hero-title">Welcome to FOG</h1>
+            <p class="hero-subtitle">Your Go-To Destination for Fashion in Punjab</p>
+            <div class="hero-btns">
+                <a href="{{ url_for('offers') }}" class="btn btn-primary btn-lg">FLAT 50% OFF</a>
+                <a href="{{ url_for('services') }}" class="btn btn-outline btn-lg">Find a Store</a>
+            </div>
+        </div>
+    </div>
 </section>
-<section class="stores" id="stores">
-    <h2>FOG Stores</h2>
-    <ul>
-        <li>Bathinda</li>
-        <li>Barnala</li>
-        <li>Zira</li>
-        <li>Kotkapura</li>
-        <li>Mansa</li>
-    </ul>
-    <p><a href="https://wa.me/919858400013" class="cta">Contact on WhatsApp</a></p>
+
+<!-- Welcome Section -->
+<section class="section pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Welcome to FOG <span class="text-gradient">(Fashion of Generations)</span></h2>
+            <p class="subtitle">Elevating Punjab's fashion experience since 1998</p>
+        </div>
+        
+        <div class="grid">
+            <div class="grid-col-6 animate-on-scroll">
+                <p>At FOG, we bring you the latest and most stylish fashion clothing for men, women and kids, all at affordable prices. With five convenient locations in Punjab — Bathinda, Barnala, Zira, Kotkapura, and Mansa — our stores offer a vast selection that caters to every family member.</p>
+                <p>Whether you're shopping for a casual outfit, formal wear or seasonal essentials, you'll find everything you need under one roof.</p>
+                <p>Our commitment to exceptional customer service ensures that your shopping experience is always pleasant and hassle-free. Explore our diverse collection and enjoy a shopping experience where fashion meets value. Visit us today and discover why FOG is the go-to destination for fashion in Punjab!</p>
+            </div>
+            <div class="grid-col-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="feature-title">Quality Fashion</h3>
+                    <p>Premium clothing selections for the entire family at affordable prices</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<section class="promo">
-    <h2>Winter Collection Sale</h2>
-    <p>Massive 50% discount on winter apparel. Shop now and enjoy unbeatable savings!</p>
+
+<!-- Collections Showcase -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Discover Our Collections</h2>
+            <p class="subtitle">Trendy fashion for everyone in your family</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Men's Collection -->
+            <div class="grid-col-4 animate-on-scroll">
+                <div class="collection">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVucyUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Men's Collection" class="collection-img">
+                    <div class="collection-content">
+                        <h3 class="collection-title">Men's Collection</h3>
+                        <p>Explore our range of stylish and comfortable men's wear</p>
+                        <a href="{{ url_for('offers') }}" class="btn btn-sm btn-primary mt-4">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Women's Collection -->
+            <div class="grid-col-4 animate-on-scroll">
+                <div class="collection">
+                    <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d29tZW5zJTIwZmFzaGlvbnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Women's Collection" class="collection-img">
+                    <div class="collection-content">
+                        <h3 class="collection-title">Women's Collection</h3>
+                        <p>Elegant and trendy fashion for every occasion</p>
+                        <a href="{{ url_for('offers') }}" class="btn btn-sm btn-primary mt-4">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kids' Collection -->
+            <div class="grid-col-4 animate-on-scroll">
+                <div class="collection">
+                    <img src="https://images.unsplash.com/photo-1560506840-ec148e82a604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Kids Collection" class="collection-img">
+                    <div class="collection-content">
+                        <h3 class="collection-title">Kids' Collection</h3>
+                        <p>Fun and stylish clothing for your little ones</p>
+                        <a href="{{ url_for('offers') }}" class="btn btn-sm btn-primary mt-4">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!-- Current Promotions -->
+<section class="section pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Current Promotions</h2>
+            <p class="subtitle">Don't miss our exclusive offers</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Summer Collection -->
+            <div class="grid-col-6 animate-on-scroll">
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN1bW1lciUyMGZhc2hpb258ZW58MHwwfDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Summer Collection" class="promo-img">
+                    <div class="promo-overlay">
+                        <h3 class="promo-title">Summer Collection</h3>
+                        <p class="promo-text">Step into style with our exclusive summer collection! Find the latest trends that keep you cool and fashionable all season long.</p>
+                        <a href="{{ url_for('offers') }}" class="btn btn-primary btn-sm">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Flat 50% Off -->
+            <div class="grid-col-6 animate-on-scroll">
+                <div class="promo-card">
+                    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="50% Off Sale" class="promo-img">
+                    <div class="promo-overlay">
+                        <h3 class="promo-title">FLAT 50% OFF</h3>
+                        <p class="promo-text">Don't miss out! Enjoy an unbeatable FLAT 50% off on all items. Refresh your wardrobe with our premium selections at half the price.</p>
+                        <a href="{{ url_for('offers') }}" class="btn btn-primary btn-sm">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Winter Special -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-col-6">
+                <div class="animate-on-scroll">
+                    <h2>Winter Collection Sale</h2>
+                    <p class="subtitle mb-4">Massive discounts on our premium winter wear</p>
+                    
+                    <p>As you prepare for your winter travels, don't miss out on our exclusive Winter Collection. We're excited to offer a massive 50% flat discount on our entire range of winter apparel. From cozy sweaters and stylish jackets to warm accessories, we have everything you need to stay comfortable and chic this season.</p>
+                    
+                    <p>Whether you're exploring snowy landscapes or chilly urban streets, our diverse selection guarantees you'll find the perfect winter wear. Shop now and enjoy unbeatable savings on the latest trends.</p>
+                    
+                    <div class="mt-6">
+                        <a href="{{ url_for('offers') }}" class="btn btn-primary">FLAT 50% OFF</a>
+                        <a href="{{ url_for('services') }}" class="btn btn-outline ml-3">Visit Our Store</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-col-6">
+                <div class="animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1511605750502-28ff76039595?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2ludGVyJTIwZmFzaGlvbnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Winter Collection" class="rounded-lg shadow-lg" style="width: 100%; height: 400px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Store Locations -->
+<section id="stores" class="section pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>FOG Stores</h2>
+            <p class="subtitle">Find us across Punjab</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Bathinda -->
+            <div class="grid-col-3 animate-on-scroll">
+                <div class="store-card">
+                    <h3 class="store-name">Bathinda</h3>
+                    <p class="store-address">BIBI WALA ROAD, BHARAT NAGAR NEAR PALM SPRINGS HOTEL, BATHINDA, 151001</p>
+                    <div class="store-actions">
+                        <a href="https://bit.ly/2XT9Uaw" target="_blank" class="btn btn-outline btn-sm store-link" data-store-name="Bathinda" data-store-address="BIBI WALA ROAD, BHARAT NAGAR">
+                            <i class="fas fa-map-marker-alt"></i> Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Barnala -->
+            <div class="grid-col-3 animate-on-scroll">
+                <div class="store-card">
+                    <h3 class="store-name">Barnala</h3>
+                    <p class="store-address">Handiaya Road, Near Court Complex, Barnala, 148101</p>
+                    <div class="store-actions">
+                        <a href="https://bit.ly/2XXSEBi" target="_blank" class="btn btn-outline btn-sm store-link" data-store-name="Barnala" data-store-address="Handiaya Road, Near Court Complex">
+                            <i class="fas fa-map-marker-alt"></i> Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Zira -->
+            <div class="grid-col-3 animate-on-scroll">
+                <div class="store-card">
+                    <h3 class="store-name">Zira</h3>
+                    <p class="store-address">Ferozpur Road, Opp Deep Hospital, Zira, 142047</p>
+                    <div class="store-actions">
+                        <a href="https://bit.ly/4cLexrI" target="_blank" class="btn btn-outline btn-sm store-link" data-store-name="Zira" data-store-address="Ferozpur Road, Opp Deep Hospital">
+                            <i class="fas fa-map-marker-alt"></i> Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kotkapura -->
+            <div class="grid-col-3 animate-on-scroll">
+                <div class="store-card">
+                    <h3 class="store-name">Kotkapura</h3>
+                    <p class="store-address">Moga Road, Near West Point School, Kotkapura, 151204</p>
+                    <div class="store-actions">
+                        <a href="https://bit.ly/3rGrYCb" target="_blank" class="btn btn-outline btn-sm store-link" data-store-name="Kotkapura" data-store-address="Moga Road, Near West Point School">
+                            <i class="fas fa-map-marker-alt"></i> Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mansa -->
+            <div class="grid-col-3 animate-on-scroll">
+                <div class="store-card">
+                    <h3 class="store-name">Mansa</h3>
+                    <p class="store-address">SIRSA ROAD, NEAR T-POINT, MANSA, 151505</p>
+                    <div class="store-actions">
+                        <a href="https://www.google.com/maps/place/FOG+Mansa/@30.0033611,75.3914022,20.5z/" target="_blank" class="btn btn-outline btn-sm store-link" data-store-name="Mansa" data-store-address="SIRSA ROAD, NEAR T-POINT">
+                            <i class="fas fa-map-marker-alt"></i> Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Contact -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-col-6 animate-on-scroll">
+                <h2>Get in Touch</h2>
+                <p class="subtitle mb-8">We'd love to hear from you</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919858400013">+91 98584 00013</a>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+919888369103">+91 98883 69103</a>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/919858400013">WhatsApp Us</a>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:1313fog@gmail.com">1313fog@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <h4>Our Business Hours</h4>
+                    <p>Monday - Saturday: 9:30 AM - 9:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="grid-col-6">
+                <div class="animate-on-scroll">
+                    <div class="social-connections text-center">
+                        <h3 class="mb-6">Connect With Us On Social Media</h3>
+                        
+                        <div class="social-grid">
+                            <a href="https://instagram.com/1313fog" class="social-card" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                                <small>@1313fog</small>
+                            </a>
+                            
+                            <a href="https://facebook.com/1313fog" class="social-card" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                                <small>1313FOG</small>
+                            </a>
+                            
+                            <a href="https://www.snapchat.com/add/fog_1313" class="social-card" target="_blank">
+                                <i class="fab fa-snapchat-ghost"></i>
+                                <span>Snapchat</span>
+                                <small>fog_1313</small>
+                            </a>
+                            
+                            <a href="https://wa.me/919858400013" class="social-card" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                                <small>Connect Now</small>
+                            </a>
+                        </div>
+                        
+                        <a href="https://www.google.com/maps/place/Fog+Bathinda+(1313+FOG)/@30.222621,74.9586755,21z/" class="btn btn-outline btn-icon mt-8" target="_blank">
+                            <i class="fas fa-star"></i> Review us on Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .social-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+    
+    .social-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: var(--spacing-6);
+        background-color: var(--color-card);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        color: var(--color-text-primary);
+        transition: var(--transition-all);
+    }
+    
+    .social-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+        text-decoration: none;
+        color: var(--color-primary);
+    }
+    
+    .social-card i {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-3);
+    }
+    
+    .social-card span {
+        font-weight: 600;
+        margin-bottom: var(--spacing-2);
+    }
+    
+    .social-card small {
+        color: var(--color-text-tertiary);
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Add special animation for store cards
+    document.addEventListener('DOMContentLoaded', function() {
+        const storeCards = document.querySelectorAll('.store-card');
+        
+        storeCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                card.style.transform = 'translateY(-10px)';
+                card.style.boxShadow = 'var(--shadow-lg)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = 'var(--shadow-md)';
+            });
+        });
+    });
+</script>
 {% endblock %}

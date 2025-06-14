@@ -1,15 +1,739 @@
 {% extends 'base.html' %}
-{% block title %}Stores | 1313FOG{% endblock %}
+{% block title %}Our Stores | 1313FOG - Fashion of Generation{% endblock %}
+
 {% block content %}
-<section class="stores">
-    <h1>Our Stores</h1>
-    <ul class="addresses">
-        <li><strong>FOG Bathinda</strong> – Bibi Wala Road, Bharat Nagar, Near Palm Springs Hotel</li>
-        <li><strong>FOG Barnala</strong> – Handiaya Road, Near Court Complex</li>
-        <li><strong>FOG Zira</strong> – Ferozpur Road, Opp Deep Hospital</li>
-        <li><strong>FOG Kotkapura</strong> – Moga Road, Near West Point School</li>
-        <li><strong>FOG Mansa</strong> – Sirsa Road, Near T-Point</li>
-    </ul>
-    <p class="hours">Opening Hours Mon–Sat 9:30 am to 9:00 pm</p>
+<!-- Services Hero Section -->
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+        <div class="hero-content animate-on-scroll">
+            <h1 class="hero-title">Our Store Locations</h1>
+            <p class="hero-subtitle">Visit us at any of our 5 stores across Punjab</p>
+        </div>
+    </div>
 </section>
+
+<!-- Store Locator Section -->
+<section class="section pt-16 pb-16">
+    <div class="container">
+        <div class="section-title">
+            <h2>Find a <span class="text-gradient">FOG Store</span> Near You</h2>
+            <p class="subtitle">Experience our exceptional collection and service in person</p>
+        </div>
+        
+        <!-- Store Locator Tabs -->
+        <div class="store-locator">
+            <div class="store-tabs animate-on-scroll" data-animation="fade-up">
+                <button class="store-tab-button" data-tab="bathinda">Bathinda</button>
+                <button class="store-tab-button" data-tab="barnala">Barnala</button>
+                <button class="store-tab-button" data-tab="zira">Zira</button>
+                <button class="store-tab-button" data-tab="kotkapura">Kotkapura</button>
+                <button class="store-tab-button" data-tab="mansa">Mansa</button>
+            </div>
+            
+            <div class="store-content-wrapper">
+                <!-- Bathinda Store -->
+                <div id="bathinda" class="store-tab-content animate-on-scroll" data-animation="fade-up">
+                    <div class="store-details-grid">
+                        <div class="store-info">
+                            <h3>FOG Bathinda</h3>
+                            <div class="store-address">
+                                <p><strong>Address:</strong> BIBI WALA ROAD, BHARAT NAGAR, NEAR PALM SPRINGS HOTEL, BATHINDA, 151001</p>
+                                <p><strong>Opening Hours:</strong> 9:30 am to 9:00 pm (Monday to Saturday)</p>
+                            </div>
+                            
+                            <div class="store-actions">
+                                <a href="tel:+919858400013" class="btn btn-sm btn-outline">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </a>
+                                <a href="https://bit.ly/2XT9Uaw" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-map-marker-alt"></i> Get Directions
+                                </a>
+                                <a href="https://wa.me/919858400013" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.080075130879!2d74.95662628840717!3d30.22266799826617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391732ec42031539%3A0x505a10a347ea793d!2sFog%20Bathinda%20(1313%20FOG)!5e0!3m2!1sen!2sin!4v1691487204049!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="store-gallery">
+                        <h4>Store Gallery</h4>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Bathinda Store" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Bathinda Interior" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Bathinda Clothing" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Barnala Store -->
+                <div id="barnala" class="store-tab-content animate-on-scroll" data-animation="fade-up">
+                    <div class="store-details-grid">
+                        <div class="store-info">
+                            <h3>FOG Barnala</h3>
+                            <div class="store-address">
+                                <p><strong>Address:</strong> Handiaya Road, Near Court Complex, Barnala, 148101</p>
+                                <p><strong>Opening Hours:</strong> 9:30 am to 9:00 pm (Monday to Saturday)</p>
+                            </div>
+                            
+                            <div class="store-actions">
+                                <a href="tel:+919858400013" class="btn btn-sm btn-outline">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </a>
+                                <a href="https://bit.ly/2XXSEBi" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-map-marker-alt"></i> Get Directions
+                                </a>
+                                <a href="https://wa.me/919858400013" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.380015668259!2d75.54523308844525!3d30.95561828661708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3914532944a6f6bd%3A0x5957c4ee12e3687!2s1313%20FOG%20Barnala!5e0!3m2!1sen!2sin!4v1691487841899!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="store-gallery">
+                        <h4>Store Gallery</h4>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Barnala Store" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1567758303055-e4585775a4a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Barnala Interior" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1576188973526-0e5d7047b0cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Barnala Clothing" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Zira Store -->
+                <div id="zira" class="store-tab-content animate-on-scroll" data-animation="fade-up">
+                    <div class="store-details-grid">
+                        <div class="store-info">
+                            <h3>FOG Zira</h3>
+                            <div class="store-address">
+                                <p><strong>Address:</strong> Ferozpur Road, Opposite Deep Hospital, Zira, 142047</p>
+                                <p><strong>Opening Hours:</strong> 9:30 am to 9:00 pm (Monday to Saturday)</p>
+                            </div>
+                            
+                            <div class="store-actions">
+                                <a href="tel:+919858400013" class="btn btn-sm btn-outline">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </a>
+                                <a href="https://bit.ly/4cLexrI" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-map-marker-alt"></i> Get Directions
+                                </a>
+                                <a href="https://wa.me/919858400013" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3414.4117438597387!2d74.98537518845811!3d31.13230838127233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a35e9ce775a67%3A0x4bd70956fb8bce87!2sFOG%20-%20Fashion%20of%20Generation%20(1313FOG)!5e0!3m2!1sen!2sin!4v1691488011764!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="store-gallery">
+                        <h4>Store Gallery</h4>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1582657233895-0f37a3f150c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Zira Store" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1562967005-a3c85514d3e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Zira Interior" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1602810318660-d6db8a6a6438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Zira Clothing" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kotkapura Store -->
+                <div id="kotkapura" class="store-tab-content animate-on-scroll" data-animation="fade-up">
+                    <div class="store-details-grid">
+                        <div class="store-info">
+                            <h3>FOG Kotkapura</h3>
+                            <div class="store-address">
+                                <p><strong>Address:</strong> Moga Road, Near West Point School, Kotkapura, 151204</p>
+                                <p><strong>Opening Hours:</strong> 9:30 am to 9:00 pm (Monday to Saturday)</p>
+                            </div>
+                            
+                            <div class="store-actions">
+                                <a href="tel:+919858400013" class="btn btn-sm btn-outline">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </a>
+                                <a href="https://bit.ly/3rGrYCb" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-map-marker-alt"></i> Get Directions
+                                </a>
+                                <a href="https://wa.me/919858400013" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.0792780434305!2d74.8356716884518!3d30.581214197578045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39171d15aa06a91d%3A0x3d0e1349896b4925!2sFOG%20-%20Kotkapura!5e0!3m2!1sen!2sin!4v1691488126038!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="store-gallery">
+                        <h4>Store Gallery</h4>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1551446591-142875a901a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Kotkapura Store" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Kotkapura Interior" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Kotkapura Clothing" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mansa Store -->
+                <div id="mansa" class="store-tab-content animate-on-scroll" data-animation="fade-up">
+                    <div class="store-details-grid">
+                        <div class="store-info">
+                            <h3>FOG Mansa</h3>
+                            <div class="store-address">
+                                <p><strong>Address:</strong> SIRSA ROAD, NEAR T-POINT, MANSA, 151505</p>
+                                <p><strong>Opening Hours:</strong> 9:30 am to 9:00 pm (Monday to Saturday)</p>
+                            </div>
+                            
+                            <div class="store-actions">
+                                <a href="tel:+919858400013" class="btn btn-sm btn-outline">
+                                    <i class="fas fa-phone"></i> Call Store
+                                </a>
+                                <a href="https://www.google.com/maps/place/FOG+Mansa/@30.0033611,75.3914022,20.5z/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-map-marker-alt"></i> Get Directions
+                                </a>
+                                <a href="https://wa.me/919858400013" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="store-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.1752343964198!2d75.39127240219568!3d30.003322099638066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39111fe28783dfcb%3A0xca43f961d3360903!2sFOG%20Mansa!5e0!3m2!1sen!2sin!4v1691488261417!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="store-gallery">
+                        <h4>Store Gallery</h4>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1593465234728-7037ab3a83e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Mansa Store" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1536749317764-c26980f40d30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Mansa Interior" class="gallery-img">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="FOG Mansa Clothing" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Operating Hours Section -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="section-title">
+            <h2>Store <span class="text-gradient">Hours</span></h2>
+            <p class="subtitle">We're open to serve you</p>
+        </div>
+        
+        <div class="hours-card animate-on-scroll" data-animation="fade-up">
+            <div class="hours-grid">
+                <div class="hours-day">
+                    <h3>Monday - Saturday</h3>
+                    <p>9:30 AM - 9:00 PM</p>
+                </div>
+                <div class="hours-day">
+                    <h3>Sunday</h3>
+                    <p>Closed for weekly off</p>
+                </div>
+                <div class="hours-day">
+                    <h3>Holiday Hours</h3>
+                    <p>May vary on national holidays</p>
+                </div>
+            </div>
+            
+            <div class="hours-note">
+                <p><i class="fas fa-info-circle"></i> Please check with your local store for any special timing changes during festivals or special events.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section pt-16 pb-16">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact <span class="text-gradient">Us</span></h2>
+            <p class="subtitle">We're here to help with any questions</p>
+        </div>
+        
+        <div class="contact-cards">
+            <div class="contact-card animate-on-scroll" data-animation="fade-up">
+                <div class="contact-card-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>Have a question? Give us a call.</p>
+                <div class="contact-card-links">
+                    <a href="tel:+919858400013">+91 98584 00013</a>
+                    <a href="tel:+919888369103">+91 98883 69103</a>
+                </div>
+            </div>
+            
+            <div class="contact-card animate-on-scroll" data-animation="fade-up">
+                <div class="contact-card-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Message us for quick responses.</p>
+                <div class="contact-card-links">
+                    <a href="https://wa.me/919858400013" target="_blank" rel="noopener">Chat with Us</a>
+                </div>
+            </div>
+            
+            <div class="contact-card animate-on-scroll" data-animation="fade-up">
+                <div class="contact-card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>Send us a detailed message.</p>
+                <div class="contact-card-links">
+                    <a href="mailto:1313fog@gmail.com">1313fog@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="contact-card animate-on-scroll" data-animation="fade-up">
+                <div class="contact-card-icon">
+                    <i class="fas fa-hashtag"></i>
+                </div>
+                <h3>Social Media</h3>
+                <p>Connect with us on social media.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/1313fog" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/1313fog" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.snapchat.com/add/fog_1313" target="_blank" rel="noopener" aria-label="Snapchat" class="social-icon">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Review & Feedback Section -->
+<section class="section bg-surface pt-12 pb-12">
+    <div class="container">
+        <div class="review-wrapper animate-on-scroll" data-animation="fade-up">
+            <div class="review-content">
+                <h2>Love your FOG shopping experience?</h2>
+                <p>Share your experience with others! We're constantly striving to improve and value your feedback.</p>
+                <div class="review-actions">
+                    <a href="https://www.google.com/maps/place/Fog+Bathinda+(1313+FOG)/@30.222621,74.9586755,21z/" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class="fab fa-google"></i> Review us on Google
+                    </a>
+                    <a href="https://wa.me/919858400013?text=Hello%20FOG,%20I'd%20like%20to%20provide%20feedback%20about%20my%20recent%20shopping%20experience:" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Send Feedback
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* Services & Store Locator Page Styles */
+.store-locator {
+    margin-top: var(--spacing-8);
+}
+
+.store-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-8);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: var(--spacing-2);
+}
+
+.store-tab-button {
+    padding: var(--spacing-3) var(--spacing-6);
+    background-color: transparent;
+    border: none;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    position: relative;
+    transition: var(--transition-colors);
+}
+
+.store-tab-button::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.store-tab-button.active {
+    color: var(--color-primary);
+}
+
+.store-tab-button.active::after {
+    transform: scaleX(1);
+}
+
+.store-tab-button:hover, .store-tab-button:focus {
+    color: var(--color-primary);
+}
+
+.store-tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.store-tab-content.active {
+    display: block;
+}
+
+.store-details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+}
+
+.store-info {
+    background-color: var(--color-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-md);
+}
+
+.store-info h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-4);
+}
+
+.store-address {
+    margin-bottom: var(--spacing-6);
+}
+
+.store-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+}
+
+.store-map {
+    background-color: var(--color-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 100%;
+    min-height: 300px;
+}
+
+.store-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.store-gallery {
+    margin-top: var(--spacing-8);
+}
+
+.store-gallery h4 {
+    margin-bottom: var(--spacing-4);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-4);
+}
+
+.gallery-item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-all);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition-transform);
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+/* Hours Section */
+.hours-card {
+    background-color: var(--color-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-md);
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+}
+
+.hours-day {
+    text-align: center;
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    background-color: var(--color-background);
+    transition: var(--transition-all);
+}
+
+.hours-day:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.hours-day h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-2);
+    color: var(--color-primary);
+}
+
+.hours-note {
+    margin-top: var(--spacing-6);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    background-color: rgba(var(--color-primary-rgb), 0.1);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* Contact Cards */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-6);
+}
+
+.contact-card {
+    background-color: var(--color-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-all);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-card-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto var(--spacing-4);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact-card h3 {
+    margin-bottom: var(--spacing-2);
+}
+
+.contact-card p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-4);
+}
+
+.contact-card-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.contact-card-links a {
+    color: var(--color-primary);
+    transition: var(--transition-colors);
+}
+
+.contact-card-links a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-3);
+}
+
+/* Review Section */
+.review-wrapper {
+    background-color: var(--color-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.review-content {
+    padding: var(--spacing-8);
+    text-align: center;
+}
+
+.review-content h2 {
+    margin-bottom: var(--spacing-4);
+}
+
+.review-content p {
+    margin-bottom: var(--spacing-6);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .store-details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hours-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .review-content {
+        padding: var(--spacing-12);
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Store tabs functionality
+        const storeTabs = document.querySelectorAll('.store-tab-button');
+        const storeDetails = document.querySelectorAll('.store-tab-content');
+        
+        storeTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs and details
+                storeTabs.forEach(t => t.classList.remove('active'));
+                storeDetails.forEach(d => d.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding store detail
+                const storeId = tab.dataset.tab;
+                document.getElementById(storeId).classList.add('active');
+            });
+        });
+        
+        // Animate maps on visibility
+        const storeMaps = document.querySelectorAll('.store-map');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        storeMaps.forEach(map => {
+            map.style.transform = 'translateY(20px)';
+            map.style.opacity = '0';
+            map.style.transition = 'transform 0.6s ease-out, opacity 0.6s ease-out';
+            observer.observe(map);
+        });
+    });
+</script>
 {% endblock %}
