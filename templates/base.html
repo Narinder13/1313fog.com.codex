@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}1313FOG{% endblock %}</title>
+    <meta name="description" content="1313FOG - Fashion of Generation multi-brand store for men, women and kids in Punjab.">
+    <meta property="og:title" content="1313FOG"/>
+    <meta property="og:description" content="Discover latest fashion for men, women and kids at 1313FOG"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <div class="logo"><a href="{{ url_for('index') }}">1313FOG</a></div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('services') }}">Stores</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact') }}">Policies</a></li>
+        </ul>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    <p>&copy;1998 1313FOG All rights reserved.</p>
+    <div class="social">
+        <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+        <a href="https://wa.me/919858400013" aria-label="WhatsApp">WhatsApp</a>
+        <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

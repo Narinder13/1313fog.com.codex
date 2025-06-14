@@ -1,0 +1,69 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --accent-color: #e11d48;
+}
+body.dark {
+    --bg-color: #111111;
+    --text-color: #ffffff;
+}
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+nav {
+    position: sticky;
+    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: var(--bg-color);
+    padding:0.5rem 1rem;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+nav .nav-links {
+    list-style:none;
+    display:flex;
+    gap:1rem;
+    margin:0;
+    padding:0;
+}
+nav a {
+    text-decoration:none;
+    color:var(--text-color);
+    font-weight:bold;
+}
+.hero {
+    text-align:center;
+    padding:4rem 1rem;
+    background:linear-gradient(135deg, #e11d48, #f43f5e);
+    color:white;
+}
+.stores, .promo, .about, .policies {
+    padding:2rem 1rem;
+    max-width:800px;
+    margin:auto;
+}
+.cta {
+    display:inline-block;
+    margin-top:1rem;
+    padding:0.5rem 1rem;
+    background:var(--accent-color);
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+}
+footer {
+    text-align:center;
+    padding:1rem;
+    background:var(--bg-color);
+    border-top:1px solid #ccc;
+}
+.social a {
+    margin:0 0.5rem;
+    color:var(--text-color);
+}
